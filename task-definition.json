@@ -4,7 +4,7 @@
   "containerDefinitions": [
       {
           "name": "django-container",
-          "image": "159321162316.dkr.ecr.us-east-1.amazonaws.com/ecrdevopssimetrik:ee85f40481cc9a68232c330fb269a212cebfe054",
+          "image": "159321162316.dkr.ecr.us-east-1.amazonaws.com/ecrdevopssimetrik:${GITHUB_REF#refs/heads/}.${GITHUB_SHA}",
           "portMappings": [
               {
                   "containerPort": 8000,
