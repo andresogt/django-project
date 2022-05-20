@@ -15,7 +15,7 @@ env:
   ECR_REPOSITORY: ecrdevopssimetrik           # set this to your Amazon ECR repository name
   ECS_SERVICE: django_app                 # set this to your Amazon ECS service name
   ECS_CLUSTER: cluster-ecs                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: .aws/task-def.json # set this to the path to your Amazon ECS task definition
+  ECS_TASK_DEFINITION: django-project/task-definition.json # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: django-container           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition

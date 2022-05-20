@@ -1,0 +1,13 @@
+ {
+   "name" : "django-container",
+   "image": "aogilt/django-app:latest",
+   "cpu"  : 10,
+   "memory" : 512,
+   "essential" : true,
+      portMappings : [
+        {
+          "containerPort" : 8000,
+          "hostPort": 8000
+        }
+      ]
+    }
